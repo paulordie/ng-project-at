@@ -6,15 +6,17 @@
         <p>your bucket list here {{itemCount}}</p>
     </div>
 </div>
-<div class="container color-light "[@goals]="goals.length">
+<div class="container color-light"[@goals]="goals.length">
     <div class="col">
         <p class="sm">use this form from below what you want because you want say anythig you want</p>
         
         <form>
             <input text="text" class="txt" name="item" placeholder="life goal.." [(ngModel)]="goalText">
+            <input text="text" class="txt" name="item" placeholder="life goal.." [(ngModel)]="goalText">
             <br>
             <!-- <br><span>{{ goalText }}</span> -->
-            <input text="submit" class="btn" [value]="btnText" (click)="addItem()">   
+            <!-- <input text="submit" class="btn" [value]="btnText" (click)="addItem()">    -->
+            <input text="submit" class="btn" placeholder={{btnText}} (click)="addItem()">   
         </form>
     </div>
     <div class="col">
@@ -23,3 +25,5 @@
         </p>
     </div>
 </div>
+
+
