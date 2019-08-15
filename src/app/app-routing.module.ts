@@ -1,3 +1,4 @@
+import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -7,12 +8,16 @@ import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   {
-    path:'home/:id',
+    path:'home/47',
     component: HomeComponent
   },
   {
-    path:'about/:id',
+    path:'about/48',
     component: AboutComponent
+  },
+  {
+    path:'localhost:4200',
+    component:HomeComponent
   }
 ];
 
